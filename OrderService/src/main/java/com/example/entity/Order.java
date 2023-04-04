@@ -18,7 +18,7 @@ public class Order {
     @Id
     private String id;
     @Field
-    private Date date;
+    private String date;
     @Field
     private String productId;
     @Field

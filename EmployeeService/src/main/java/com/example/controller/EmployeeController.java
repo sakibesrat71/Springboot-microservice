@@ -22,4 +22,9 @@ public class EmployeeController {
         System.out.println("hello");
         return employeeService.findEmployeeById(employeeId);
     }
+
+    @GetMapping("/status")
+    public String status(){
+        return "Employee Service is up and running";
+    }
 }

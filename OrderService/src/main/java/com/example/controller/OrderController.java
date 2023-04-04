@@ -27,4 +27,9 @@ public class OrderController {
     public ResponseTemplateValueObject getOrderWithProduct(@PathVariable("id") String orderId){
         return orderService.getOrderWithProduct(orderId);
     }
+
+    @GetMapping("/status")
+    public String status(){
+        return "Order Service is up and running";
+    }
 }
